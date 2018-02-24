@@ -1,5 +1,6 @@
 body {
 	background-color: #fbf4ea;
+	margin: 0;
 }
 
 #main-body {
@@ -17,19 +18,17 @@ body {
 }
 
 #navbar {
-	width: 100%;
-	height: 600px;
-	margin: auto;
-	background-image: url("../img/kf1dreamy.jpg");
-    background-position-y: -175px;
-    background-position-x: center;
-    background-repeat: no-repeat;
+	text-align: center;
 }
 
 #navbar ul {
 	list-style-type: none;
 	background-color: #fbf4ea;
-	padding: 20px 0;
+	margin: 0;
+	padding: 20px 0;	
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 }
 
 #navbar li {
@@ -48,11 +47,24 @@ body {
 	border-bottom: 5px solid #800020;
 }
 
+#banner {
+	width: 100%;
+	height: 450px;
+	margin: auto;
+	background-image: url("../img/kf1dreamy.jpg");
+    background-position-y: -200px;
+    background-position-x: center;
+    background-repeat: no-repeat;	
+	text-align: center;
+    padding-top: 150px;
+}
+
 #kentonandfaye {
-    margin-top: 200px;
     font-size: 80px;
     font-weight: lighter;
     letter-spacing: 30px;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
 }
 
 #rsvp-button {
@@ -98,9 +110,18 @@ body {
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+#event {
+	padding-top: 70px;
+}
+
+#event h1 {
+	color: #800020;
+	margin: 0;
+}
+
 
 #details {
-	padding: 100px 50px;
+	padding: 30px 50px 100px 50px;
 	text-align: center;
 	display: flex;
 	justify-content: space-between;
