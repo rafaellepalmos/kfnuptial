@@ -17,6 +17,10 @@ body {
 	background-color: #fbf4ea;
 }
 
+#main-body>div:nth-child(even) {
+	background-color: #800020;
+}
+
 #navbar {
 	text-align: center;
 }
@@ -29,6 +33,9 @@ body {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+    transition: 
+    -webkit-transition: background-color 2s; /* Safari */
+    transition: background-color 2s;
 }
 
 #navbar li {
@@ -87,11 +94,6 @@ body {
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-#invitation-text {
-	font-size: 3rem;
-	color: #800020;
-}
-
 #celebrants {
 	display: flex;
 	justify-content: space-between;
@@ -106,8 +108,19 @@ body {
 	width: 250px;
 	height: 250px;
 	border-radius: 50%;
-	border: 5px solid #800020;
+	border: 5px solid #fbf4ea;
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#countdown {
+	font-size: 4rem;
+	color: #fbf4ea;
+	margin: 0;
+}
+
+#invitation-text {
+	font-size: 3rem;
+	color: #fbf4ea;
 }
 
 #event {
@@ -117,6 +130,7 @@ body {
 #event h1 {
 	color: #800020;
 	margin: 0;
+	font-family: 'Oswald', sans-serif;
 }
 
 
@@ -136,15 +150,17 @@ body {
 
 #entourage {
 	padding: 100px 0;
+	color: #fbf4ea;
 }
 
 #entourage h1 {
-	color: #800020;
+	color: #fbf4ea;
+	font-family: 'Oswald', sans-serif;
 }
 
 #entourage-table {
 	margin: auto;
-	border: 3px solid #800020;
+	border: 3px solid #fbf4ea;
 	padding: 20px 30px;
 }
 
@@ -177,10 +193,28 @@ body {
 
 #resources {
 	padding: 100px 0;
+	display: flex;
+    justify-content: center;
 }
 
 #resources h1 {
 	color: #800020;
+}
+
+#additional-resources {
+	font-size: 28px;
+	font-family: 'Oswald', sans-serif;
+	margin: 0 25px;
+}
+
+#resources-list {
+	color: #800020;
+	line-height: 45px;
+	margin: 0 25px;
+}
+
+#resources p {
+	vertical-align: middle;
 }
 
 #resources a {
@@ -193,7 +227,8 @@ body {
 }
 
 #map h1 {
-	color: #800020;
+	color: #fbf4ea;
+	font-family: 'Oswald', sans-serif;
 }
 
 #contact {
@@ -202,6 +237,7 @@ body {
 
 #contact h1 {
 	color: #800020;
+	font-family: 'Oswald', sans-serif;
 }
 
 .male {
@@ -231,4 +267,14 @@ body {
 
 footer {
 	text-align: center;
+	background-color: #800020;
+	color: white;
+	padding: 3px 0;
+}
+
+@media screen and (max-width: 768px) {
+  #invitation-text {
+    font-size: 2.5rem;
+    color: black;
+  }
 }
