@@ -1,16 +1,4 @@
-
-
-	//check for initial width
-	if($(window).width()>600){
-		$("#navbar-ul").css({"display": "block"});
-		$("#menu-icon").css({"display": "none"});
-	}
-	else if($(window).width()<600){
-		$("#navbar-ul").css({"display": "none"});
-		$("#menu-icon").css({"display": "block"});
-
-		
-	}$(document).ready(function(){
+$(document).ready(function(){
 	$(window).scroll(function () {
     	if ($(this).scrollTop() > 80) {
     		$("#navbar-ul").css({"backgroundColor": "#800020", "color": "#fbf4ea"});
@@ -23,6 +11,16 @@
     		$("#menu").css({"backgroundColor": "#fbf4ea", "color": "#800020"});
     	}
     });
+
+	//check for initial width
+	if($(window).width()>600){
+		$("#navbar-ul").css({"display": "block"});
+		$("#menu-icon").css({"display": "none"});
+	}
+	else if($(window).width()<600){
+		$("#navbar-ul").css({"display": "none"});
+		$("#menu-icon").css({"display": "block"});
+	}
 
 	//check for width changes
 	var width = $(window).width();
