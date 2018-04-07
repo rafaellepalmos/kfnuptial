@@ -1,30 +1,39 @@
 $(document).ready(function(){
-    $(window).scroll(function () {
-    	// console.log($(this).scrollTop());
-    	// console.log($(this).scrollTop() > 80);
-      if ($(this).scrollTop() > 80) {
-      	$("#navbar-ul").css({"backgroundColor": "#800020", "color": "#fbf4ea"});
-      	$("#menu-icon").css({"backgroundColor": "#800020", "color": "#fbf4ea"});
-      	$("#menu").css({"backgroundColor": "#800020", "color": "#fbf4ea"});
-      };
-      if ($(this).scrollTop() < 50) {
-      	$("#navbar-ul").css({"backgroundColor": "#fbf4ea", "color": "#800020"});
-      	$("#menu-icon").css({"backgroundColor": "#fbf4ea", "color": "#800020"});
-      	$("#menu").css({"backgroundColor": "#fbf4ea", "color": "#800020"});
-      }
-  });
-});
+	$(window).scroll(function () {
+    	if ($(this).scrollTop() > 80) {
+    		$("#navbar-ul").css({"backgroundColor": "#800020", "color": "#fbf4ea"});
+    		$("#menu-icon").css({"backgroundColor": "#800020", "color": "#fbf4ea"});
+    		$("#menu").css({"backgroundColor": "#800020", "color": "#fbf4ea"});
+    	};
+    	if ($(this).scrollTop() < 50) {
+    		$("#navbar-ul").css({"backgroundColor": "#fbf4ea", "color": "#800020"});
+    		$("#menu-icon").css({"backgroundColor": "#fbf4ea", "color": "#800020"});
+    		$("#menu").css({"backgroundColor": "#fbf4ea", "color": "#800020"});
+    	}
+    });
 
-var width = $(window).width();
-$(window).on('resize', function(){
-   if($(this).width() > 600){
-      $("#navbar-ul").css({"display": "block"});
-      $("#menu-icon").css({"display": "none"});
-   }
-   if($(this).width() < 600){
-      $("#navbar-ul").css({"display": "none"});
-      $("#menu-icon").css({"display": "block"});
-   }
+	//check for initial width
+	if($(window).width()>600){
+		$("#navbar-ul").css({"display": "block"});
+		$("#menu-icon").css({"display": "none"});
+	}
+	else if($(window).width()<600){
+		$("#navbar-ul").css({"display": "none"});
+		$("#menu-icon").css({"display": "block"});
+	}
+
+	//check for width changes
+	var width = $(window).width();
+	$(window).on('resize', function(){
+		if($(this).width() > 600){
+			$("#navbar-ul").css({"display": "block"});
+			$("#menu-icon").css({"display": "none"});
+		}
+		if($(this).width() < 600){
+			$("#navbar-ul").css({"display": "none"});
+			$("#menu-icon").css({"display": "block"});
+		}
+	});
 });
 
 function showMenu() {

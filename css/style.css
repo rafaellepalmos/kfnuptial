@@ -155,8 +155,9 @@ body {
 }
 
 #invitation-text {
-	font-size: 3rem;
+	font-size: 4rem;
 	color: #fbf4ea;
+	font-family: 'Oswald', sans-serif;
 }
 
 #event {
@@ -334,7 +335,7 @@ footer {
 		width: 1024px;
 	}
 	#invitation-text {
-		font-size: 2.3rem;
+		font-size: 3rem;
 	}
 	#details div {
 		padding: 50px 1rem;
@@ -366,7 +367,7 @@ footer {
 		font-size: 5rem;
 	}
 	#invitation-text {
-		font-size: 4rem;
+		font-size: 5rem;
 	}
 	#details {
 		display: block;
