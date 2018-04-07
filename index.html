@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Allerta+Stencil|Antic|Cuprum|Jura|Michroma|Nova+Mono|Numans|Philosopher|Raleway|Reem+Kufi|Snippet|Source+Code+Pro|Text+Me+One|Oswald:200" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<script src="js/main.js"></script>
 
 	<title>Kenton & Faye</title>
 </head>
 <body>
-		<span id="navbar" class="female">
+	<div id="menu-icon" class="invisible">
+		<a href="javascript:void(0);" onclick="showMenu()">&#9776;</a>
+	</div>
+	<div id="menu" onclick="showMenu()">
+		<p><a href="#details"">DETAILS</a></p>
+		<p><a href="#entourage"">ENTOURAGE</a></p>
+		<p><a href="#resources"">RESOURCES</a></p>
+		<p><a href="#map"">MAP</a></p>
+		<p><a href="#contact"">CONTACT</a></p>
+	</div>
+	<div id="navbar" class="female">
 			<ul id="navbar-ul" class="font6">
 				<li><a href="#details">DETAILS</a></li>
 				<li><a href="#entourage">ENTOURAGE</a></li>
@@ -19,7 +32,7 @@
 				<li><a href="#map">MAP</a></li>
 				<li><a href="#contact">CONTACT</a></li>
 			</ul>
-		</span> <!--closes navbar-->
+		</div> <!--closes navbar-->
 	<div id="main-body">
 		<div id="banner" class="female">
 			<p id="kentonandfaye" class="font14">KENTON & FAYE</p>
@@ -90,6 +103,10 @@
 					<td>Renedith Calabdan</td>
 				</tr>
 				<tr>
+					<td>John Cervantes</td>
+					<td>Jen Cervantes</td>
+				</tr>
+				<tr>
 					<td>Chat Thongpiyapoom</td>
 					<td>Fang Thongpiyapoom</td>
 				</tr>
@@ -123,7 +140,7 @@
 					<th colspan="2">Ring Bearer</th>
 				</tr>
 				<tr>
-					<td colspan="2">Max Sayarot</td>
+					<td colspan="2">Max Mulder</td>
 				</tr>
 				<tr>
 					<th colspan="2">Flower Girls</th>

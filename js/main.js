@@ -1,14 +1,35 @@
 $(document).ready(function(){
     $(window).scroll(function () {
+    	// console.log($(this).scrollTop());
+    	// console.log($(this).scrollTop() > 80);
       if ($(this).scrollTop() > 80) {
       	$("#navbar-ul").css({"backgroundColor": "#800020", "color": "#fbf4ea"});
+      	$("#menu-icon").css({"backgroundColor": "#800020", "color": "#fbf4ea"});
+      	$("#menu").css({"backgroundColor": "#800020", "color": "#fbf4ea"});
       };
       if ($(this).scrollTop() < 50) {
       	$("#navbar-ul").css({"backgroundColor": "#fbf4ea", "color": "#800020"});
+      	$("#menu-icon").css({"backgroundColor": "#fbf4ea", "color": "#800020"});
+      	$("#menu").css({"backgroundColor": "#fbf4ea", "color": "#800020"});
       }
   });
 });
 
+var width = $(window).width();
+$(window).on('resize', function(){
+   if($(this).width() > 600){
+      $("#navbar-ul").css({"display": "block"});
+      $("#menu-icon").css({"display": "none"});
+   }
+   if($(this).width() < 600){
+      $("#navbar-ul").css({"display": "none"});
+      $("#menu-icon").css({"display": "block"});
+   }
+});
+
+function showMenu() {
+	$("#menu").toggle();
+}
 // // Set the date we're counting down to
 // var countDownDate = new Date("July 21, 2018 09:00:00").getTime();
 

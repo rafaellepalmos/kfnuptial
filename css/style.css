@@ -28,10 +28,11 @@ body {
 #navbar ul {
 	list-style-type: none;
 	background-color: #fbf4ea;
+	width: 100%;
 	margin: 0;
 	padding: 20px 0;	
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
+    position: -webkit-fixed; /* Safari */
+    position: fixed;
     top: 0;
     transition: 
     -webkit-transition: background-color 2s; /* Safari */
@@ -52,6 +53,41 @@ body {
 	/*background-color: #800020;*/
 	/*color: white;*/
 	border-bottom: 5px solid #800020;
+}
+
+#menu-icon {
+    padding: 1rem 5rem;
+    position: fixed;
+    width: 100%;
+    background-color: #fbf4ea;
+    color: #800020;
+}
+
+#menu-icon a {
+	font-family: 'Raleway', sans-serif;
+	text-decoration: none;
+    color: inherit;
+    font-size: 5rem;
+}
+
+#menu {	
+	margin-top: 7rem;
+    position: fixed;
+    background-color: #fbf4ea;
+    color: #800020;
+    padding: 5rem;
+    display: none;
+}
+
+#menu p {
+    margin: 50px 0;
+}
+
+#menu a {
+	font-family: 'Oswald', sans-serif;
+	text-decoration: none;
+    color: inherit;
+    font-size: 5rem;
 }
 
 #banner {
@@ -124,12 +160,11 @@ body {
 }
 
 #event {
-	padding-top: 70px;
+	padding: 100px 0;
 }
 
 #event h1 {
 	color: #800020;
-	margin: 0;
 	font-family: 'Oswald', sans-serif;
 }
 
@@ -272,9 +307,99 @@ footer {
 	padding: 3px 0;
 }
 
-@media screen and (max-width: 768px) {
-  #invitation-text {
-    font-size: 2.5rem;
-    color: black;
-  }
+@media screen and (max-width: 2560px) {
+	body {
+		width: 1440px;
+	}
+	#main-body {
+	width: 1440px;
+	}
+
+}
+
+@media screen and (max-width: 1440px) {
+	body {
+		width: 1440px;
+	}
+	#main-body {
+		width: 1440px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	body {
+		width: 1024px;
+	}
+	#main-body {
+		width: 1024px;
+	}
+	#invitation-text {
+		font-size: 2.3rem;
+	}
+	#details div {
+		padding: 50px 1rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#banner {
+		height: 600px;
+		background-position-y: -20px;
+	}
+	#kentonandfaye {
+		margin-top: 250px;
+	}
+	#rsvp-button {
+		margin-top: 100px;
+	}
+	#kenton {
+		display: none;
+	}
+	#invitation {
+		width: 100% !important;
+		margin: auto;
+	}
+	#faye {
+		display: none
+	}
+	#event h1 {
+		font-size: 5rem;
+	}
+	#invitation-text {
+		font-size: 4rem;
+	}
+	#details {
+		display: block;
+		padding: 0 50px;
+	}
+	#details div {
+		margin: 5rem auto;
+		width: calc(100%/2);
+		font-size: 2rem;
+	}
+	#entourage h1 {
+		font-size: 5rem;
+	}
+	#entourage-table {
+		font-size: 2rem;
+	}
+	#additional-resources {
+		font-size: 3rem;
+	}
+	#resources-list {
+		font-size: 2rem;
+		line-height: 4rem;
+	}
+	#map h1 {
+		font-size: 5rem;
+	}
+	#contact h1 {
+		font-size: 5rem;
+	}
+	#contact p {
+		font-size: 2rem;
+	}
+	footer {
+		font-size: 2rem;
+	}
 }
