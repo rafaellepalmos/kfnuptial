@@ -1,203 +1,97 @@
 body {
 	background-color: #fbf4ea;
+	font-family: 'Raleway', sans-serif;
+	color:#800020;
 	margin: 0;
 }
 
-#main-body {
-	width: 100%;
-	margin: auto;
-	background-color: white;
+nav {
+	background-color: #800020;
+	color:#800020;
 }
 
-#main-body div {	
+.sidenav {
+	background-color: rgba(251,244,234, 0.9);
+}
+
+.sidenav li>a {
+	color:#800020;
+}
+
+#mobile-menu {
+	padding-top: 5rem;
+}
+
+#parallax-text {
+	font-family: 'Alegreya Sans SC', sans-serif;
 	text-align: center;
+	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+	0px -5px 35px rgba(255,255,255,0.3);
 }
 
-#main-body>div:nth-child(odd) {
-	background-color: #fbf4ea;
+#menu {
+	background-color: #800020;
+	color: #fbf4ea;
+	box-shadow: 0px 0px 5px #fff;
 }
 
-#main-body>div:nth-child(even) {
+.btn-floating:hover {
 	background-color: #800020;
 }
 
-#navbar {
+.tap-target {
+    background-color: #800020;
+}
+
+div.tap-target-wrapper.open {
+	color: #fbf4ea;
+}
+
+div.tap-target-wave > a {
+	background-color: #800020;
+	color: #fbf4ea;
+}
+
+.sections>div:nth-child(odd) {
+	background-color: #fbf4ea;
+}
+
+.sections>div:nth-child(even) {
+	background-color: #800020;
+	color: #fbf4ea;
+}
+
+.section-name {
+	text-align: center;
+	font-size: 3rem;
+	font-family: 'Oswald', sans-serif;
+}
+
+.card-panel {
+	background-color: #800020;
+	color: #fbf4ea;
 	text-align: center;
 }
 
-#navbar ul {
-	list-style-type: none;
-	background-color: #fbf4ea;
-	width: 100%;
-	margin: 0;
-	padding: 20px 0;	
-    position: -webkit-fixed; /* Safari */
-    position: fixed;
-    top: 0;
-    transition: 
-    -webkit-transition: background-color 2s; /* Safari */
-    transition: background-color 2s;
+#countdown {
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
 }
 
-#navbar li {
-	display: inline;
-	padding: 10px 50px;
-}
-
-#navbar li a {
+#go-to-map a {
 	text-decoration: none;
 	color: inherit;
 }
 
-#navbar li:hover {
-	/*background-color: #800020;*/
-	/*color: white;*/
-	border-bottom: 5px solid #800020;
-}
-
-#menu-icon {
-    padding: 1rem 5rem;
-    position: fixed;
-    width: 100%;
-    background-color: #fbf4ea;
-    color: #800020;
-}
-
-#menu-icon a {
-	font-family: 'Raleway', sans-serif;
-	text-decoration: none;
-    color: inherit;
-    font-size: 5rem;
-}
-
-#menu {	
-	margin-top: 7rem;
-    position: fixed;
-    background-color: #fbf4ea;
-    color: #800020;
-    padding: 5rem;
-    display: none;
-}
-
-#menu p {
-    margin: 50px 0;
-}
-
-#menu a {
-	font-family: 'Oswald', sans-serif;
-	text-decoration: none;
-    color: inherit;
-    font-size: 5rem;
-}
-
-#banner {
-	width: 100%;
-	height: 450px;
-	margin: auto;
-	background-image: url("../img/kf1dreamy.jpg");
-    background-position-y: -200px;
-    background-position-x: center;
-    background-repeat: no-repeat;	
-	text-align: center;
-    padding-top: 150px;
-}
-
-#kentonandfaye {
-    font-size: 80px;
-    font-weight: lighter;
-    letter-spacing: 30px;
-    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-                 0px -5px 35px rgba(255,255,255,0.3);
-}
-
-#rsvp-button {
-	margin-top: 130px;
-}
-
-#rsvp-button a {
-	text-decoration: none;
-	background-color: #800020;
-	border-radius: 30%;
-	font-size: 3rem;
-	color: white;
-	padding: 1rem 2rem;
-}
-
-#rsvp-button a:hover {
-	background-color: #fbf4ea;
-	border: 5px solid #800020;
-	color: #800020;
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-#celebrants {
-	display: flex;
-	justify-content: space-between;
-}
-
-#celebrants div {
-	width: calc(100%/3);
-	padding: 100px 0;
-}
-
-#celebrants img {
-	width: 250px;
-	height: 250px;
-	border-radius: 50%;
-	border: 5px solid #fbf4ea;
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-#countdown {
-	font-size: 4rem;
-	color: #fbf4ea;
-	margin: 0;
-}
-
-#invitation-text {
-	font-size: 4rem;
-	color: #fbf4ea;
-	font-family: 'Oswald', sans-serif;
-}
-
-#event {
-	padding: 100px 0;
-}
-
-#event h1 {
-	color: #800020;
-	font-family: 'Oswald', sans-serif;
-}
-
-
-#details {
-	padding: 30px 50px 100px 50px;
-	text-align: center;
-	display: flex;
-	justify-content: space-between;
-}
-
-#details div {
-	width: calc(100%/4);
-	padding: 50px 0;
-	background-color: white;
-	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-}
-
-#entourage {
-	padding: 100px 0;
-	color: #fbf4ea;
-}
-
-#entourage h1 {
-	color: #fbf4ea;
-	font-family: 'Oswald', sans-serif;
-}
-
 #entourage-table {
+	width: 40%;
 	margin: auto;
 	border: 3px solid #fbf4ea;
-	padding: 20px 30px;
+	color: #fbf4ea;
+}
+
+#entourage-table tr {
+	border-bottom: none;
 }
 
 #entourage-table td:nth-child(odd) {
@@ -215,16 +109,12 @@ body {
 }
 
 #entourage th {
+	text-align: center;
 	padding: 30px 0 10px 0;
 }
 
 #entourage td {
 	padding: 5px 0;
-}
-
-#go-to-map a {
-	text-decoration: none;
-	color: inherit;
 }
 
 #resources {
@@ -233,73 +123,28 @@ body {
     justify-content: center;
 }
 
-#resources h1 {
-	color: #800020;
-}
-
 #additional-resources {
-	font-size: 28px;
-	font-family: 'Oswald', sans-serif;
-	margin: 0 25px;
+	margin: 0 2rem;
 }
 
 #resources-list {
-	color: #800020;
-	line-height: 45px;
-	margin: 0 25px;
-}
-
-#resources p {
-	vertical-align: middle;
+	line-height: 4rem;
+	margin: 0 2rem;
 }
 
 #resources a {
+	font-size: 1.25rem;
 	text-decoration: none;
 	color: inherit;
 }
 
 #map {
-	padding: 100px 0;
-}
-
-#map h1 {
-	color: #fbf4ea;
-	font-family: 'Oswald', sans-serif;
+	text-align: center;
 }
 
 #contact {
-	padding: 100px 0;
+	text-align: center;
 }
-
-#contact h1 {
-	color: #800020;
-	font-family: 'Oswald', sans-serif;
-}
-
-.male {
-	color: #000080;
-	font-weight: bold;
-}
-
-.female {
-	color: #800020;
-	font-weight: bold;
-}
-
-.font1 {font-family: 'Cuprum', sans-serif;}
-.font2 {font-family: 'Jura', sans-serif;}
-.font3 {font-family: 'Michroma', sans-serif;}/*THIS*/
-.font4 {font-family: 'Nova Mono', monospace;}
-.font5 {font-family: 'Philosopher', sans-serif;}
-.font6 {font-family: 'Raleway', sans-serif;}
-.font7 {font-family: 'Source Code Pro', monospace;}
-.font8 {font-family: 'Snippet', sans-serif;}/*THIS*/
-.font9 {font-family: 'Text Me One', sans-serif;}
-.font10 {font-family: 'Numans', sans-serif;}/*THIS*/
-.font11 {font-family: 'Allerta Stencil', sans-serif;}/*THIS*/
-.font12 {font-family: 'Reem Kufi', sans-serif;}
-.font13 {font-family: 'Antic', sans-serif;}
-.font14 {font-family: 'Alegreya Sans SC', sans-serif;}
 
 footer {
 	text-align: center;
@@ -308,99 +153,118 @@ footer {
 	padding: 3px 0;
 }
 
-@media screen and (max-width: 2560px) {
-	body {
-		width: 1440px;
+@media screen and (min-device-width: 1440px) {
+	.parallax-container {
+		height: 1108px;
 	}
-	#main-body {
-	width: 1440px;
+	#parallax-img1 {
+		width: 1477px;
 	}
-
-}
-
-@media screen and (max-width: 1440px) {
-	body {
-		width: 1440px;
-	}
-	#main-body {
-		width: 1440px;
+	#parallax-text {
+		margin-top: 45rem;
+		font-size: 7rem;
+		font-weight: lighter;
+		letter-spacing: 40px;
 	}
 }
 
-@media screen and (max-width: 1024px) {
-	body {
-		width: 1024px;
+
+@media screen and (min-device-width: 1200px)  and (max-device-width: 1439px){
+	.parallax-container {
+		height: 1108px;
 	}
-	#main-body {
-		width: 1024px;
+	#parallax-img1 {
+		width: 1477px;
 	}
-	#invitation-text {
-		font-size: 3rem;
-	}
-	#details div {
-		padding: 50px 1rem;
+	#parallax-text {
+		margin-top: 45rem;
+		font-size: 6rem;
+		font-weight: lighter;
+		letter-spacing: 30px;
 	}
 }
 
-@media screen and (max-width: 600px) {
-	#banner {
+@media screen and (min-device-width: 1024px) and (max-device-width: 1199px) {
+	.parallax-container {
+		height: 700px;
+	}
+	#parallax-img1 {
+		width: 900px;
+	}
+	#parallax-text {
+		margin-top: 30rem;
+		font-size: 5rem;
+		font-weight: lighter;
+		letter-spacing: 30px;
+	}
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+	.parallax-container {
 		height: 600px;
-		background-position-y: -20px;
 	}
-	#kentonandfaye {
-		margin-top: 250px;
+	#parallax-img1 {
+		width: 800px;
 	}
-	#rsvp-button {
-		margin-top: 100px;
-	}
-	#kenton {
-		display: none;
-	}
-	#invitation {
-		width: 100% !important;
-		margin: auto;
-	}
-	#faye {
-		display: none
-	}
-	#event h1 {
-		font-size: 5rem;
-	}
-	#invitation-text {
-		font-size: 5rem;
-	}
-	#details {
-		display: block;
-		padding: 0 50px;
-	}
-	#details div {
-		margin: 5rem auto;
-		width: calc(100%/2);
-		font-size: 2rem;
-	}
-	#entourage h1 {
-		font-size: 5rem;
-	}
-	#entourage-table {
-		font-size: 2rem;
-	}
-	#additional-resources {
+	#parallax-text {
+		margin-top: 25rem;
 		font-size: 3rem;
+		font-weight: normal;
+		letter-spacing: 25px;
 	}
-	#resources-list {
+}
+@media screen and (min-device-width: 425px) and (max-device-width: 767px) {
+	.parallax-container {
+		height: 500px;
+	}
+	#parallax-img1 {
+		width: 650px;
+	}
+	#parallax-text {
+		margin-top: 22rem;
 		font-size: 2rem;
-		line-height: 4rem;
+		font-weight: normal;
+		letter-spacing: 15px;
 	}
-	#map h1 {
-		font-size: 5rem;
+
+	#resources {
+		padding: 100px 0;
+		display: block;
+		text-align: center;
 	}
-	#contact h1 {
-		font-size: 5rem;
+
+	#additional-resources {
+		display: block;
 	}
-	#contact p {
-		font-size: 2rem;
+
+	#resources a {
+		font-size: 1rem;
 	}
-	footer {
-		font-size: 2rem;
+}
+@media screen and (max-device-width: 424px) {
+	.parallax-container {
+		height: 300px;
+	}
+	#parallax-img1 {
+		width: 400px;
+	}
+	#parallax-text {
+		margin-top: 13rem;
+		font-size: 1.5rem;
+		font-weight: bolder;
+		letter-spacing: 10px;
+	}
+
+	#resources {
+		padding: 100px 0;
+		display: block;
+		text-align: center;
+	}
+
+	#additional-resources {
+		display: block;
+	}
+
+	#resources a {
+		font-size: 1rem;
 	}
 }
