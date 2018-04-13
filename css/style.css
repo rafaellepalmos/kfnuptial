@@ -267,4 +267,12 @@ footer {
 	#resources a {
 		font-size: 1rem;
 	}
+
+	#counter {
+		font-size: 3rem;
+	}
+
+	#map iframe {
+		width: 20rem;
+	}
 }
