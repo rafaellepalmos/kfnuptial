@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Allerta+Stencil|Antic|Cuprum|Jura|Michroma|Nova+Mono|Numans|Philosopher|Raleway|Reem+Kufi|Snippet|Source+Code+Pro|Text+Me+One|Oswald:200" rel="stylesheet">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/main.js"></script>
+
+	<title>Kenton & Faye</title>
+</head>
+<body>
+	<nav>
+		<div class="nav-wrapper">
+			<!-- <a href="#" class="brand-logo"><span>Kenton & Faye</span></a> -->
+			<a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="#details">DETAILS</a></li>
+				<li><a href="#entourage">ENTOURAGE</a></li>
+				<li><a href="#resources">RESOURCES</a></li>
+				<li><a href="#map">MAP</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<ul class="sidenav" id="mobile-menu">
+		<li><a href="#details">DETAILS</a></li>
+		<li><a href="#entourage">ENTOURAGE</a></li>
+		<li><a href="#resources">RESOURCES</a></li>
+		<li><a href="#map">MAP</a></li>
+		<li><a href="#contact">CONTACT</a></li>
+	</ul>
+
+	<div class="parallax-container">
+		<div class="parallax"><img src="img/kfdreamy.jpg" id="parallax-img1"></div>
+		<p id="parallax-text">KENTON & FAYE</p>
+
+	</div>
+	<div class="fixed-action-btn">
+		<a href="https://goo.gl/forms/vB8MlyDbz0L8r6DG2" target="_blank" id="menu" class="waves-effect waves-light btn btn-floating">RSVP</a>
+	</div>
+
+	<!-- Tap Target Structure -->
+	<div class="tap-target" data-target="menu">
+		<div class="tap-target-content" onclick="$('.tap-target').tapTarget('close')">
+			<h6><b>Message from Faye:</b><br>We would like to ensure that we have seats reserved for you. So if you know that you are coming, please let us know through our RSVP form.</h6>
+		</div>
+	</div>
+
+
+	<div class="sections">
+		<div class="section" id="details">
+			<div class="row container">
+				<h1 class="header" id="countdown">00:00</h1>
+				<p class="section-name">EVENT DETAILS</p>
+				<div class="row">
+					<div class="col s12 m4 l4 xl4">
+						<div class="card-panel">
+							<h5><i class="fas fa-clock"></i> WHEN</h5>
+							<p>09:00 am</p>
+							<p>21 July 2018</p>
+						</div>
+					</div>
+					<div class="col s12 m4 l4 xl4">
+						<div class="card-panel">
+							<h5><i class="fas fa-map-marker-alt"></i> WHERE</h5>
+							<p>Mary Help of Christians Church</p>
+							<p id="go-to-map"><a href="#map">Go to map &#9755;</a></p>
+						</div>
+					</div>
+					<div class="col s12 m4 l4 xl4">
+						<div class="card-panel">
+							<h5 class="female"><i class="fas fa-male"></i><i class="fas fa-female"></i> MOTIF</h5>
+							<p><span class="female">Burgundy & Navy Blue</span></p>
+							<p>Formal Attire</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section" id="entourage">
+			<p class="section-name">THE ENTOURAGE</p>
+			<table id="entourage-table">
+				<tr>
+					<th colspan="2">Parents of the Groom</th>
+				</tr>
+				<tr>
+					<td>Kee Chye Yew</td>
+					<td>Juan Siew Peng</td>
+				</tr>
+				<tr>
+					<th colspan="2">Parents of the Bride</th>
+				</tr>
+				<tr>
+					<td>Baltazar Palmos</td>
+					<td>Joyce Palmos</td>
+				</tr>
+				<tr>
+					<th colspan="2">Godparents</th>
+				</tr>
+				<tr>
+					<td>Tom Thomas</td>
+					<td>Mithra Mamplilly</td>
+				</tr>
+				<tr>
+					<td>Isabelo Lagura</td>
+					<td>Clarisa Lagura</td>
+				</tr>
+				<tr>
+					<td>Rey Calabdan</td>
+					<td>Renedith Calabdan</td>
+				</tr>
+				<tr>
+					<td>John Cervantes</td>
+					<td>Jen Cervantes</td>
+				</tr>
+				<tr>
+					<td>Chat Thongpiyapoom</td>
+					<td>Fang Thongpiyapoom</td>
+				</tr>
+				<tr>
+					<th colspan="2">Bestman & Maid of Honor</th>
+				</tr>
+				<tr>
+					<td>Aldin Yeap</td>
+					<td>Sasja Mulder</td>
+				</tr>
+				<tr>
+					<th colspan="2">Groomsmen & Bridesmaids</th>
+				</tr>
+				<tr>
+					<td>Melvin Flores</td>
+					<td>Mikee Palmos</td>
+				</tr>
+				<tr>
+					<td>Ong Shao Quan</td>
+					<td>Abby Palmos</td>
+				</tr>
+				<tr>
+					<td>Nonth Thongtab</td>
+					<td>Uriel Palmos</td>
+				</tr>
+				<tr>
+					<td>Bronson Huang</td>
+					<td>Kendra Kee</td>
+				</tr>
+				<tr>
+					<th colspan="2">Ring Bearer</th>
+				</tr>
+				<tr>
+					<td colspan="2">Max Mulder</td>
+				</tr>
+				<tr>
+					<th colspan="2">Flower Girls</th>
+				</tr>
+				<tr>
+					<td colspan="2">Aera Courtney Elera</td>
+				</tr>
+				<tr>
+					<td colspan="2">Mireya Kiva Flores</td>
+				</tr>
+				<tr>
+					<td colspan="2">Clara Kee</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="section">
+			<div class="row container" id="resources">
+				<div class="valign-wrapper" id="additional-resources"><span class="section-name">ADDITIONAL<br>RESOURCES</span></div>
+				<div id="resources-list">
+					<p><a href="#">Matrimonial Ceremony</a></p>
+					<p><a href="#">Pictorial Order</a></p>
+					<p><a href="#">Table Arrangements</a></p>
+					<p><a href="#">Wedding Reception Program</a></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="section" id="map">
+			<div class="row container">
+				<p class="section-name">VENUE LOCATION</p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3875.4697123821143!2d100.64677!3d13.750524!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb0c8fec106869435!2sMary+Help+of+Christians+Church!5e0!3m2!1sen!2sth!4v1520447871228" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
+
+		<div class="section" id="contact">
+			<div class="row container">
+				<p class="section-name">CONTACT</p>
+				<p><i class="fas fa-phone"></i> +65 9232 9394 (Singapore)</p>
+				<p><i class="fas fa-phone"></i> +66 83 096 5052 (Thailand)</p>
+			</div>
+		</div>
+	</div>
+
+	<footer><p>Copyright &copy; 2018 Faye Palmos.All Rights Reserved.</p></footer>
+</body>
+</html>

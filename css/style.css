@@ -1,0 +1,270 @@
+body {
+	background-color: #fbf4ea;
+	font-family: 'Raleway', sans-serif;
+	color:#800020;
+	margin: 0;
+}
+
+nav {
+	background-color: #800020;
+	color:#800020;
+}
+
+.sidenav {
+	background-color: rgba(251,244,234, 0.9);
+}
+
+.sidenav li>a {
+	color:#800020;
+}
+
+#mobile-menu {
+	padding-top: 5rem;
+}
+
+#parallax-text {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	text-align: center;
+	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+	0px -5px 35px rgba(255,255,255,0.3);
+}
+
+#menu {
+	background-color: #800020;
+	color: #fbf4ea;
+	box-shadow: 0px 0px 5px #fff;
+}
+
+.btn-floating:hover {
+	background-color: #800020;
+}
+
+.tap-target {
+    background-color: #800020;
+}
+
+div.tap-target-wrapper.open {
+	color: #fbf4ea;
+}
+
+div.tap-target-wave > a {
+	background-color: #800020;
+	color: #fbf4ea;
+}
+
+.sections>div:nth-child(odd) {
+	background-color: #fbf4ea;
+}
+
+.sections>div:nth-child(even) {
+	background-color: #800020;
+	color: #fbf4ea;
+}
+
+.section-name {
+	text-align: center;
+	font-size: 3rem;
+	font-family: 'Oswald', sans-serif;
+}
+
+.card-panel {
+	background-color: #800020;
+	color: #fbf4ea;
+	text-align: center;
+}
+
+#countdown {
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+}
+
+#go-to-map a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#entourage-table {
+	width: 40%;
+	margin: auto;
+	border: 3px solid #fbf4ea;
+	color: #fbf4ea;
+}
+
+#entourage-table tr {
+	border-bottom: none;
+}
+
+#entourage-table td:nth-child(odd) {
+	text-align: right;
+	padding-right: 10px;
+}
+
+#entourage-table td:nth-child(even) {
+	text-align: left;
+	padding-left: 10px;
+}
+
+#entourage-table td:only-child {
+	text-align: center;
+}
+
+#entourage th {
+	text-align: center;
+	padding: 30px 0 10px 0;
+}
+
+#entourage td {
+	padding: 5px 0;
+}
+
+#resources {
+	padding: 100px 0;
+	display: flex;
+    justify-content: center;
+}
+
+#additional-resources {
+	margin: 0 2rem;
+}
+
+#resources-list {
+	line-height: 4rem;
+	margin: 0 2rem;
+}
+
+#resources a {
+	font-size: 1.25rem;
+	text-decoration: none;
+	color: inherit;
+}
+
+#map {
+	text-align: center;
+}
+
+#contact {
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+	background-color: #800020;
+	color: white;
+	padding: 3px 0;
+}
+
+@media screen and (min-device-width: 1440px) {
+	.parallax-container {
+		height: 1108px;
+	}
+	#parallax-img1 {
+		width: 1477px;
+	}
+	#parallax-text {
+		margin-top: 45rem;
+		font-size: 7rem;
+		font-weight: lighter;
+		letter-spacing: 40px;
+	}
+}
+
+
+@media screen and (min-device-width: 1200px)  and (max-device-width: 1439px){
+	.parallax-container {
+		height: 1108px;
+	}
+	#parallax-img1 {
+		width: 1477px;
+	}
+	#parallax-text {
+		margin-top: 45rem;
+		font-size: 6rem;
+		font-weight: lighter;
+		letter-spacing: 30px;
+	}
+}
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1199px) {
+	.parallax-container {
+		height: 700px;
+	}
+	#parallax-img1 {
+		width: 900px;
+	}
+	#parallax-text {
+		margin-top: 30rem;
+		font-size: 5rem;
+		font-weight: lighter;
+		letter-spacing: 30px;
+	}
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+	.parallax-container {
+		height: 600px;
+	}
+	#parallax-img1 {
+		width: 800px;
+	}
+	#parallax-text {
+		margin-top: 25rem;
+		font-size: 3rem;
+		font-weight: normal;
+		letter-spacing: 25px;
+	}
+}
+@media screen and (min-device-width: 425px) and (max-device-width: 767px) {
+	.parallax-container {
+		height: 500px;
+	}
+	#parallax-img1 {
+		width: 650px;
+	}
+	#parallax-text {
+		margin-top: 22rem;
+		font-size: 2rem;
+		font-weight: normal;
+		letter-spacing: 15px;
+	}
+
+	#resources {
+		padding: 100px 0;
+		display: block;
+		text-align: center;
+	}
+
+	#additional-resources {
+		display: block;
+	}
+
+	#resources a {
+		font-size: 1rem;
+	}
+}
+@media screen and (max-device-width: 424px) {
+	.parallax-container {
+		height: 300px;
+	}
+	#parallax-img1 {
+		width: 400px;
+	}
+	#parallax-text {
+		margin-top: 13rem;
+		font-size: 1.5rem;
+		font-weight: bolder;
+		letter-spacing: 10px;
+	}
+
+	#resources {
+		padding: 100px 0;
+		display: block;
+		text-align: center;
+	}
+
+	#additional-resources {
+		display: block;
+	}
+
+	#resources a {
+		font-size: 1rem;
+	}
+}
