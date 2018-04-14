@@ -28,9 +28,17 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in the element with id="demo"
-  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  // Display the result in the element with id days-value
+  document.getElementById("days-value").innerHTML = days;
+
+  // Display the result in the element with id hours-value
+  document.getElementById("hours-value").innerHTML = hours;
+
+  // Display the result in the element with id mins-value
+  document.getElementById("mins-value").innerHTML = minutes;
+
+  // Display the result in the element with id secs-value
+  document.getElementById("secs-value").innerHTML = seconds + "s ";
 
   // If the count down is finished, update the text 
   if (distance < 0) {

@@ -4,7 +4,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
-	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Allerta+Stencil|Antic|Cuprum|Jura|Michroma|Nova+Mono|Numans|Philosopher|Raleway|Reem+Kufi|Snippet|Source+Code+Pro|Text+Me+One|Oswald:200" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Allerta+Stencil|Antic|Cuprum|Jura|Michroma|Nova+Mono|Numans|Philosopher|Raleway|Reem+Kufi|Snippet|Source+Code+Pro|Text+Me+One|Oswald:200|Pacifico" rel="stylesheet">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -20,26 +20,28 @@
 	<title>Kenton & Faye</title>
 </head>
 <body>
-	<nav>
-		<div class="nav-wrapper">
-			<!-- <a href="#" class="brand-logo"><span>Kenton & Faye</span></a> -->
-			<a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-			<ul class="right hide-on-med-and-down">
-				<li><a href="#details">DETAILS</a></li>
-				<li><a href="#entourage">ENTOURAGE</a></li>
-				<li><a href="#resources">RESOURCES</a></li>
-				<li><a href="#map">MAP</a></li>
-				<li><a href="#contact">CONTACT</a></li>
-			</ul>
-		</div>
-	</nav>
+	<div class="navbar-fixed">
+		<nav>
+			<div class="nav-wrapper">
+				<!-- <a href="#" class="brand-logo"><span>Kenton & Faye</span></a> -->
+				<a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="#details">DETAILS</a></li>
+					<li><a href="#entourage">ENTOURAGE</a></li>
+					<li><a href="#resources">RESOURCES</a></li>
+					<li><a href="#map">MAP</a></li>
+					<li><a href="#contact">CONTACT</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
 
 	<ul class="sidenav" id="mobile-menu">
-		<li><a href="#details">DETAILS</a></li>
-		<li><a href="#entourage">ENTOURAGE</a></li>
-		<li><a href="#resources">RESOURCES</a></li>
-		<li><a href="#map">MAP</a></li>
-		<li><a href="#contact">CONTACT</a></li>
+		<li><a class="sidenav-close" href="#details">DETAILS</a></li>
+		<li><a class="sidenav-close" href="#entourage">ENTOURAGE</a></li>
+		<li><a class="sidenav-close" href="#resources">RESOURCES</a></li>
+		<li><a class="sidenav-close" href="#map">MAP</a></li>
+		<li><a class="sidenav-close" href="#contact">CONTACT</a></li>
 		<li><a href="https://goo.gl/forms/vB8MlyDbz0L8r6DG2" target="_blank">RSVP</a></li>
 	</ul>
 
@@ -63,7 +65,26 @@
 	<div class="sections">
 		<div class="section" id="details">
 			<div class="row container">
-				<h1 class="header" id="countdown">00:00</h1>
+				<p id="countdown-title">Countdown to the wedding:</p>
+				<div id="countdown">
+					<span>
+						<p id="days-value">00</p>
+						<p>days</p>
+					</span>
+					<span>
+						<p id="hours-value">00</p>
+						<p>hours</p>
+					</span>
+					<span>
+						<p id="mins-value">00</p>
+						<p>minutes</p>
+					</span>
+					<span>
+						<p id="secs-value">00</p>
+						<p>seconds</p>
+					</span>
+				</div>
+				<br><hr>
 				<p class="section-name">EVENT DETAILS</p>
 				<div class="row">
 					<div class="col s12 m4 l4 xl4">
@@ -182,10 +203,10 @@
 			<div class="row container" id="resources">
 				<div class="valign-wrapper" id="additional-resources"><span class="section-name">ADDITIONAL<br>RESOURCES</span></div>
 				<div id="resources-list">
-					<p><a href="#">Matrimonial Ceremony</a></p>
-					<p><a href="#">Pictorial Order</a></p>
-					<p><a href="#">Table Arrangements</a></p>
-					<p><a href="#">Wedding Reception Program</a></p>
+					<p><a href="#resources">Matrimonial Ceremony</a></p>
+					<p><a href="#resources">Pictorial Order</a></p>
+					<p><a href="#resources">Table Arrangements</a></p>
+					<p><a href="#resources">Wedding Reception Program</a></p>
 				</div>
 			</div>
 		</div>

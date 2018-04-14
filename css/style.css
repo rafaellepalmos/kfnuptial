@@ -74,8 +74,23 @@ div.tap-target-wave > a {
 }
 
 #countdown {
+	width: 70%;
+	margin: 3rem auto;
 	text-align: center;
 	font-family: 'Oswald', sans-serif;
+	font-size: 3rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+#countdown-title {
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-size: 2rem;
+}
+
+#countdown p {
+	margin: 0;
 }
 
 #go-to-map a {
@@ -85,7 +100,7 @@ div.tap-target-wave > a {
 
 #entourage-table {
 	width: 40%;
-	margin: auto;
+	margin: 5rem auto;
 	border: 3px solid #fbf4ea;
 	color: #fbf4ea;
 }
@@ -96,12 +111,12 @@ div.tap-target-wave > a {
 
 #entourage-table td:nth-child(odd) {
 	text-align: right;
-	padding-right: 10px;
+	padding: 0 10px;
 }
 
 #entourage-table td:nth-child(even) {
 	text-align: left;
-	padding-left: 10px;
+	padding: 0 10px;
 }
 
 #entourage-table td:only-child {
@@ -140,6 +155,10 @@ div.tap-target-wave > a {
 
 #map {
 	text-align: center;
+}
+
+#map .row {
+	margin-bottom: 5rem;
 }
 
 #contact {
@@ -239,6 +258,10 @@ footer {
 	#resources a {
 		font-size: 1rem;
 	}
+
+	#countdown {
+		font-size: 2rem;
+	}
 }
 @media screen and (max-device-width: 424px) {
 	.parallax-container {
@@ -268,8 +291,8 @@ footer {
 		font-size: 1rem;
 	}
 
-	#counter {
-		font-size: 3rem;
+	#countdown {
+		font-size: 1.5rem;
 	}
 
 	#map iframe {
